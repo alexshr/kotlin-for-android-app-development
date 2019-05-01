@@ -1,6 +1,8 @@
-import kotlinx.coroutines.experimental.Unconfined
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.Dispatchers.Unconfined
+import kotlinx.coroutines.launch
 
-launch(Unconfined) {
+
+GlobalScope.launch(Unconfined) {
   println("Running on ${Thread.currentThread().name}")
 }

@@ -1,4 +1,4 @@
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.runBlocking
 
 annotation class Test
 // ------------

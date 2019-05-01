@@ -1,7 +1,7 @@
 package chapter05;
 
 import java.io.FileNotFoundException;
-
+//java
 public class Listing0526 {
   public static void main(String[] args) {
     try {  // Must handle exception

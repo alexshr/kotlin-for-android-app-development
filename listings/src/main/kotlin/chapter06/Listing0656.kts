@@ -1,4 +1,4 @@
-import javafx.scene.image.Image
+/*import javafx.scene.image.Image
 import java.util.concurrent.CompletableFuture
 
 // Callbacks
@@ -8,4 +8,4 @@ fun fetchImageAsync(callback: (Image) -> Unit) { }
 fun fetchImageAsync(): CompletableFuture<Image> { return CompletableFuture() }
 
 // Coroutines
-suspend fun fetchImage(): Image { return Image("") }
+suspend fun fetchImage(): Image { return Image("") }*/

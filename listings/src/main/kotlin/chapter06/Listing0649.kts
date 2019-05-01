@@ -1,12 +1,16 @@
-import kotlinx.coroutines.experimental.channels.actor
-import kotlinx.coroutines.experimental.runBlocking
+@file:Suppress("EXPERIMENTAL_API_USAGE")
 
-val actor = actor<String> {
-  val message = channel.receive()
-  println(message)
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.channels.actor
+
+import kotlinx.coroutines.runBlocking
+
+val actor = GlobalScope.actor<String> {
+    val message = channel.receive()
+    println(message)
 }
 
 runBlocking {
-  actor.send("Hello World!")  // Sends an element to the actor’s channel
-  actor.close()    // Closes channel because actor is no longer needed
+    actor.send("Hello World!")  // Sends an element to the actor’s channel
+    actor.close()    // Closes channel because actor is no longer needed
 }

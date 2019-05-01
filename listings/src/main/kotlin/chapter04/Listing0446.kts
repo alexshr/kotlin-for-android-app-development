@@ -1,4 +1,4 @@
-import javafx.scene.Scene
+/*import javafx.scene.Scene
 
 object SceneRegistry {  // Declares an object: this is effectively a Singleton
   lateinit private var homeScene: Scene
@@ -9,4 +9,4 @@ object SceneRegistry {  // Declares an object: this is effectively a Singleton
 // ----------
 
 val home = SceneRegistry.buildHomeScene()
-val settings = SceneRegistry.buildSettingsScene()
+val settings = SceneRegistry.buildSettingsScene()*/

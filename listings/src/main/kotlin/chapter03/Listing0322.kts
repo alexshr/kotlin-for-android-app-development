@@ -3,3 +3,4 @@ val countryToCapital = mapOf(                   // Creates a read-only map
 // ------------
 
 val searchResult = countryToCapital.keys.filter { it.toUpperCase().startsWith('F') }
+//val searchResult = countryToCapital.keys.filter { it->it.toUpperCase().startsWith('F') }

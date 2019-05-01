@@ -1,6 +1,6 @@
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 runBlocking {
 
@@ -13,7 +13,7 @@ runBlocking {
 
   delay(1000)
   println("main(): No more time")
-  job.cancel()  // Can control cancellation on per-coroutine level
+  //job.cancel()  // Can control cancellation on per-coroutine level
   job.join()    // Then wait for it to cancel
   println("main(): Now ready to quit")
 }

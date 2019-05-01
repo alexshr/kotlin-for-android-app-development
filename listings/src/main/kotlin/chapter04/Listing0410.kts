@@ -9,5 +9,6 @@ class Cat(val birthday: LocalDate) {
 }
 
 val felix = Cat(LocalDate.of(2013, 10, 27))
+println("object created without computing age...")
 println("age = ${felix.age}")  // "Computing age...\n age = 5" (run in 2018)
 println("age = ${felix.age}")  // "age = 5"; returns cached value

@@ -1,4 +1,5 @@
-val name: String? = "John Doe"
+//val name: String? = "John Doe"
+val name: String? = null
 //println(name.length)    // Not safe => causes compile-time error
 
 if (name != null) {     // Explicit null check

@@ -1,9 +1,9 @@
 class Foo {
-  fun plainMethod() {}
-  infix fun with(other: Any) = Pair(this, other)
-  inline fun inlined(i: Int, operation: (Int, Int) -> Int) = operation(i, 42)
-  operator fun Int.times(str: String) = str.repeat(this)
-  fun withDefaults(n: Int = 1, str: String = "Hello World") = n * str
+    fun plainMethod() {}
+    infix fun with(other: Any) = Pair(this, other)
+    inline fun inlined(i: Int, operation: (Int, Int) -> Int) = operation(i, 42)
+    operator fun Int.times(str: String) = str.repeat(this)
+    fun withDefaults(n: Int = 1, str: String = "Hello World") = n * str
 }
 
 val obj = Foo()

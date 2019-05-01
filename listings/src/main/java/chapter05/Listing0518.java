@@ -1,5 +1,5 @@
 package chapter05;
-
+//java
 public class Listing0518 {
   public static void main(String[] args) {
     Cache0518.cache("supercar", new Car());      // Static member is callable directly on class

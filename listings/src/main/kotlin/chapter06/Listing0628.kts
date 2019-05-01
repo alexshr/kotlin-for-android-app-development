@@ -1,7 +1,8 @@
-import kotlinx.coroutines.experimental.CommonPool
-import kotlinx.coroutines.experimental.DefaultDispatcher
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
-launch { println("Running on ${Thread.currentThread().name}") }
-launch(DefaultDispatcher) { println("Running on ${Thread.currentThread().name}") }
-launch(CommonPool) { println("Running on ${Thread.currentThread().name}") }
+GlobalScope.launch { println("Running on ${Thread.currentThread().name}") }
+GlobalScope.launch(Dispatchers.Default) { println("Running on ${Thread.currentThread().name}") }
+//GlobalScope.launch(CommonPool) { println("Running on ${Thread.currentThread().name}") }
+GlobalScope.launch(Dispatchers.Main) { println("Running on ${Thread.currentThread().name}") }

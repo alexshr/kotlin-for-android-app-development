@@ -1,9 +1,10 @@
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.future.await
-import kotlinx.coroutines.experimental.future.future
-import kotlinx.coroutines.experimental.runBlocking
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.future.await
+import kotlinx.coroutines.future.future
+import kotlinx.coroutines.runBlocking
 
-fun fetchValueAsync() = future {
+fun fetchValueAsync() = GlobalScope.future {
   delay(500)
   7
 }

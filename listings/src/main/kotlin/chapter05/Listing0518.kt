@@ -1,5 +1,5 @@
 package chapter05
-
+//kotlin
 // Must rename declarations to avoid name clashes in project
 object Cache0518 {
   @JvmStatic fun cache(key: String, obj: Any) { }  // Becomes a static member
